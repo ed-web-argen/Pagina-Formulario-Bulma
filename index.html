@@ -8,7 +8,11 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' href='css/bulma.min.css'>
     <link rel="stylesheet" href="css/hoja-personal.css">
-    <script src='main.js'></script>
+    <link rel="stylesheet" href="css333/sweetalert2.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="script999/sweetalert2.js"></script>
+    <script src="script/formulario.js" defer></script>
+ 
 </head>
 
 <body>
@@ -51,16 +55,12 @@
 
             </section>
             <section class="column is-full-mobile is-half-desktop is-offset-one-quarter">
-                <form class="box hero is-primary is-bold" action="https://mailthis.to/prodando34432@yopmail.com">
-                    <p class="label">Nombre: <input class="input" type="text" placeholder="su nombre" pattern="[A-z]+" required size="15" maxlength="15">
-                         </p>
-                         
+                <form name="miform" class="box hero is-primary is-bold" action="https://mailthis.to/prodando34432@yopmail.com">
+                    <p class="label">Nombre: <input id="nombre" class="input" type="text" placeholder="su nombre" pattern="[A-z]+" required size="15" maxlength="15"></p>
                     <p class="label">telefono: <input class="input" type="tel" placeholder="ej. 333-992200" pattern="[0-9]{3}-[0-9]{6}" required></p>
-                
                     <p class="label">Sexo:<p></p>
                     <p class="label"><input class="radio" name="sexo" value="Masculino" type="radio" required>  Masculino</p>
                     <p class="label"><input class="radio" name="sexo" value="Femenino" type="radio" required">  Femenino</p>
-                
                     <p class="label">fecha: <input class="input" type="date" required></p>
                     <div class="field has-addons"><p class="label select is-fullwidth">Asunto:<span class=""><select class="" required>
                         <option>Tecnica</option>
@@ -70,7 +70,7 @@
                     </select></span>
                     </p></div><p>.</p>
                     <p class="label">Mensaje: <textarea class="textarea" placeholder="escriba su inquietud" maxlength="350" required></textarea> </p>
-                    <button class="button is-warning" type="submit">Enviar</button>
+                    <button class="button is-warning" type="submit" id="enviar">Enviar</button>
                 </form>
             </section>
         </div>
