@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Pagina con bulma</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href='css/bulma.min.css'>
+    <link rel="stylesheet" href="css/hoja-personal.css">
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <div id="contenedor" class="columns is-multiline is-vcentered">
+        <header class="column is-full-mobile is-full-desktop hero is-warning is-bold hero-body ">
+            <h1 class="title">Formulario</h1>
+            <h2 class="subtitle">formulario de envio a tu mail</h2>
+
+        </header>
+        <nav class="column is-full-mobile is-full-desktop navbar navbar-brand is-black card">
+            <a class="navbar-burger"></a>
+            <ul class="navbar-menu">
+                <li class="navbar-item"><a class="button is-primary">Inicio</a></li>
+                <li class="navbar-item"><a class="button is-primary">Contenido</a></li>
+                <li class="navbar-item"><a class="button is-primary">Subcontenido</a></li>
+                <li class="navbar-item"><a class="button is-primary">Footer</a></li>
+            </ul>
+
+        </nav>
+        <aside class="column is-full-mobile is-2-desktop hero is-warning">
+            <section class="">
+                <p>ESto es el aside para ver en el costado en modo dektop</p>
+            </section>
+        </aside>
+        <main class="column is-10-desktop">
+            <div class="columns is-multiline">
+            <section class="column is-full-mobile is-5-desktop card tile notification is-warning">
+                <article class=" card3 is-link">
+                    <p class=""></p>La pagina contiene un formulario tipo contacto, con campos a rellenar para ser enviado a un
+                    mail,
+                    en este caso para ver los resultado, indicar a cual mail desea recivir el contenido del formulario
+                    </p>
+                </article>
+            </section>
+            <section class="column is-full-mobile is-5-desktop is-offset-1 card tile notification is-warning ">
+                <article class="card3 is-link">
+                    <p class="">El maquetado esta realizado con el framework Bulma<br>
+                    </p>
+                </article>
+
+            </section>
+            <section class="column is-full-mobile is-half-desktop is-offset-one-quarter">
+                <form class="box hero is-primary is-bold" action="https://mailthis.to/prodando34432@yopmail.com">
+                    <p class="label">Nombre: <input class="input" type="text" placeholder="su nombre" pattern="[A-z]+" required size="15" maxlength="15">
+                         </p>
+                         
+                    <p class="label">telefono: <input class="input" type="tel" placeholder="ej. 333-992200" pattern="[0-9]{3}-[0-9]{6}" required></p>
+                
+                    <p class="label">Sexo:<p></p>
+                    <p class="label"><input class="radio" name="sexo" value="Masculino" type="radio" required>  Masculino</p>
+                    <p class="label"><input class="radio" name="sexo" value="Femenino" type="radio" required">  Femenino</p>
+                
+                    <p class="label">fecha: <input class="input" type="date" required></p>
+                    <div class="field has-addons"><p class="label select is-fullwidth">Asunto:<span class=""><select class="" required>
+                        <option>Tecnica</option>
+                        <option>Consulta</option>
+                        <option>Compra</option>
+                        <option>Falla</option>
+                    </select></span>
+                    </p></div><p>.</p>
+                    <p class="label">Mensaje: <textarea class="textarea" placeholder="escriba su inquietud" maxlength="350" required></textarea> </p>
+                    <button class="button is-warning" type="submit">Enviar</button>
+                </form>
+            </section>
+        </div>
+        </main>
+        <footer class="column is-full card">
+            <small class="is-right">made in ewebmi</small>
+        </footer>
+    </div>
+
+</body>
+
+</html>
